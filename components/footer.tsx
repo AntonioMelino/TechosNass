@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin } from "lucide-react"
+import { Phone, Mail, MapPin } from "lucide-react";
 
 export function Footer() {
   return (
@@ -8,13 +8,23 @@ export function Footer() {
           {/* Logo y descripción */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-primary-foreground/10 rounded-lg flex items-center justify-center">
-                <span className="text-2xl font-bold">T</span>
+              <div className="flex items-center gap-2">
+                {/* Logo */}
+                <div className="w-10 h-10 relative flex items-center justify-center">
+                  {
+                    <img
+                      src="/logo.PNG"
+                      alt="Techos Nass Logo"
+                      className="w-full h-full object-contain"
+                    />
+                  }
+                </div>
               </div>
               <span className="text-2xl font-bold">Techos Nass</span>
             </div>
             <p className="text-primary-foreground/80 leading-relaxed">
-              40 años de experiencia en instalación, reparación y mantenimiento de techos.
+              40 años de experiencia en instalación, reparación y mantenimiento
+              de techos.
             </p>
           </div>
 
@@ -51,9 +61,12 @@ export function Footer() {
         </div>
 
         <div className="border-t border-primary-foreground/20 pt-8 text-center text-primary-foreground/60">
-          <p>&copy; {new Date().getFullYear()} Techos Nass. Todos los derechos reservados.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Techos Nass. Todos los derechos
+            reservados.
+          </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }
