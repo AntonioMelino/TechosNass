@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, Users } from "lucide-react"; // ← Agregué Users
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,13 +37,11 @@ export function Header() {
           <div className="flex items-center gap-2">
             {/* Logo */}
             <div className="w-10 h-10 relative flex items-center justify-center">
-              {
-                <img
-                  src="/logo.PNG"
-                  alt="Techos Nass Logo"
-                  className="w-full h-full object-contain"
-                />
-              }
+              <img
+                src="/logo.PNG"
+                alt="Techos Nass Logo"
+                className="w-full h-full object-contain"
+              />
             </div>
 
             <span className="text-2xl font-bold text-foreground">
@@ -52,28 +50,36 @@ export function Header() {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-6">
+            {" "}
+            {/* ← Cambié gap-8 a gap-6 */}
             <button
               onClick={() => scrollToSection("inicio")}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-foreground hover:text-primary transition-colors px-2 py-1"
             >
               Inicio
             </button>
             <button
               onClick={() => scrollToSection("servicios")}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-foreground hover:text-primary transition-colors px-2 py-1"
             >
               Servicios
             </button>
             <button
               onClick={() => scrollToSection("trabajos")}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-foreground hover:text-primary transition-colors px-2 py-1"
             >
               Trabajos
             </button>
             <button
+              onClick={() => scrollToSection("clientes")}
+              className="text-foreground hover:text-primary transition-colors px-2 py-1"
+            >
+              Clientes
+            </button>
+            <button
               onClick={() => scrollToSection("nosotros")}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-foreground hover:text-primary transition-colors px-2 py-1"
             >
               Nosotros
             </button>
@@ -116,6 +122,12 @@ export function Header() {
               className="text-left text-foreground hover:text-primary transition-colors py-2"
             >
               Trabajos
+            </button>
+            <button
+              onClick={() => scrollToSection("clientes")}
+              className="text-left text-foreground hover:text-primary transition-colors py-2"
+            >
+              Clientes
             </button>
             <button
               onClick={() => scrollToSection("nosotros")}

@@ -38,7 +38,7 @@ const testimonials = [
   },
 ];
 
-// URL de tus reseñas de Google (REEMPLAZA ESTA URL CON LA TUYA)
+// URL de tus reseñas de Google
 const GOOGLE_REVIEWS_URL =
   "https://www.google.com/search?kgmid=/g/11rchh8y1f&hl=es&q=Techista+Zona+Norte+-+Techos+Nass&shndl=30&shem=ptotple,shrtsdl&source=sh/x/loc/osrp/m5/1&kgs=14e8ed9622460f39&utm_source=ptotple,shrtsdl,sh/x/loc/osrp/m5/1#lrd=0x95bcbbf8e603c67d:0xfc59b713581b7248,1,,,,";
 
@@ -50,7 +50,7 @@ export function Testimonials() {
   };
 
   return (
-    <section className="py-24 bg-background">
+    <section id="clientes" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">
