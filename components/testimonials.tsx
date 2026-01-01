@@ -66,7 +66,7 @@ export function Testimonials() {
           <div className="text-center mb-6">
             <h3 className="text-2xl font-bold text-foreground mb-2 flex items-center justify-center gap-2">
               <MapPin className="h-5 w-5 text-primary" />
-              Trabajamos en Toda Zona Norte
+              Trabajamos en toda Zona Norte
             </h3>
             <p className="text-muted-foreground">
               Nuestra área de cobertura incluye San Isidro, Vicente López,
@@ -209,7 +209,7 @@ export function Testimonials() {
                   Clientes Satisfechos
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  En toda la Zona Norte
+                  En toda Zona Norte
                 </p>
               </div>
 
@@ -232,7 +232,7 @@ export function Testimonials() {
               </p>
               <p className="text-muted-foreground mb-6">
                 Desplázate hacia abajo para contactarnos y solicitar tu
-                presupuesto sin cargo
+                presupuesto
               </p>
               <div className="flex justify-center animate-bounce">
                 <div className="inline-block w-6 h-10 border-2 border-primary/30 rounded-full">

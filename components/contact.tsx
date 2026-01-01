@@ -56,7 +56,7 @@ export function Contact() {
             Contáctenos
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Estamos listos para ayudarle con su proyecto. Presupuesto sin cargo!
+            Estamos listos para ayudarle con su problema.
           </p>
         </div>
 
@@ -181,12 +181,11 @@ export function Contact() {
             <Card className="bg-accent text-accent-foreground">
               <CardContent className="p-6">
                 <h3 className="text-lg font-bold mb-2">
-                  Presupuesto Sin Cargo
+                  Visita técnica especializada
                 </h3>
                 <p className="text-sm leading-relaxed">
-                  Realizamos visitas y presupuestos sin cargo dentro de la Zona
-                  Norte de Buenos Aires. Contáctenos ahora para coordinar una
-                  visita!
+                  Realizamos visitas y presupuestos dentro de Zona Norte de
+                  Buenos Aires. Contáctenos ahora para coordinar una visita!
                 </p>
               </CardContent>
             </Card>

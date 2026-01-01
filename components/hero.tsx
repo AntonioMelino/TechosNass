@@ -2,8 +2,15 @@
 
 import { Button } from "@/components/ui/button";
 import { Phone, ArrowRight } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 
 export function Hero() {
+  const [experience, setExperience] = useState(0);
+  const [projects, setProjects] = useState(0);
+  const [guarantee, setGuarantee] = useState(0);
+  const statsRef = useRef(null);
+  const [hasAnimated, setHasAnimated] = useState(false);
+
   const scrollToContact = () => {
     const element = document.getElementById("contacto");
     if (element) {
@@ -17,6 +24,62 @@ export function Hero() {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !hasAnimated) {
+            setHasAnimated(true);
+
+            // Animar 40+
+            let expCounter = 0;
+            const expInterval = setInterval(() => {
+              expCounter += 2;
+              setExperience(expCounter);
+              if (expCounter >= 40) {
+                clearInterval(expInterval);
+                setExperience(40);
+              }
+            }, 20);
+
+            // Animar 1000+
+            let projectsCounter = 0;
+            const projectsInterval = setInterval(() => {
+              projectsCounter += 40;
+              setProjects(projectsCounter);
+              if (projectsCounter >= 1000) {
+                clearInterval(projectsInterval);
+                setProjects(1000);
+              }
+            }, 20);
+
+            // Animar 100%
+            let guaranteeCounter = 0;
+            const guaranteeInterval = setInterval(() => {
+              guaranteeCounter += 5;
+              setGuarantee(guaranteeCounter);
+              if (guaranteeCounter >= 100) {
+                clearInterval(guaranteeInterval);
+                setGuarantee(100);
+              }
+            }, 10);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    if (statsRef.current) {
+      observer.observe(statsRef.current);
+    }
+
+    return () => {
+      if (statsRef.current) {
+        observer.unobserve(statsRef.current);
+      }
+    };
+  }, [hasAnimated]);
 
   return (
     <section
@@ -32,18 +95,14 @@ export function Hero() {
           backgroundRepeat: "no-repeat",
         }}
       />
-      {/* Dark overlay for text readability */}
       <div className="absolute inset-0 z-0 bg-primary/60" />
 
-      {/* Content */}
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
-          {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-white text-sm font-semibold border border-white/30">
             40 años de experiencia en Zona Norte
           </div>
 
-          {/* Main Heading con logo */}
           <div className="flex flex-col items-center justify-center">
             <div className="flex items-center justify-center gap-4 mb-4">
               <img
@@ -62,11 +121,10 @@ export function Hero() {
           </p>
 
           <p className="text-lg text-white/90 max-w-2xl mx-auto leading-relaxed">
-            Empresa familiar con 40 años de trayectoria. Ofrecemos presupuesto
-            sin cargo y garantía en todos nuestros trabajos.
+            Empresa familiar con 40 años de trayectoria. Ofrecemos un equipo
+            sumamente profesional y garantía en todos nuestros trabajos.
           </p>
 
-          {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <Button
               size="lg"
@@ -74,7 +132,7 @@ export function Hero() {
               onClick={scrollToContact}
             >
               <Phone className="mr-2 h-5 w-5" />
-              Solicitar Presupuesto Gratis
+              Solicitar Presupuesto
             </Button>
             <Button
               size="lg"
@@ -87,23 +145,26 @@ export function Hero() {
             </Button>
           </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 pt-12 max-w-2xl mx-auto">
+          {/* Stats con efecto de conteo */}
+          <div
+            ref={statsRef}
+            className="grid grid-cols-3 gap-8 pt-12 max-w-2xl mx-auto"
+          >
             <div className="space-y-2">
               <div className="text-4xl md:text-5xl font-bold text-white">
-                40+
+                {experience}+
               </div>
               <div className="text-sm text-white/80">Años de experiencia</div>
             </div>
             <div className="space-y-2">
               <div className="text-4xl md:text-5xl font-bold text-white">
-                1000+
+                {projects}+
               </div>
               <div className="text-sm text-white/80">Trabajos realizados</div>
             </div>
             <div className="space-y-2">
               <div className="text-4xl md:text-5xl font-bold text-white">
-                100%
+                {guarantee}%
               </div>
               <div className="text-sm text-white/80">Con garantía</div>
             </div>
