@@ -2,19 +2,10 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone, Users } from "lucide-react"; // ← Agregué Users
+import { Menu, X, Phone, Users } from "lucide-react";
 
 export function Header() {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -25,13 +16,7 @@ export function Header() {
   };
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-md"
-          : "bg-transparent"
-      }`}
-    >
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center gap-2">
@@ -44,46 +29,48 @@ export function Header() {
               />
             </div>
 
-            <span className="text-2xl font-bold text-foreground">
-              Techos <span className="text-primary">Nass</span>
+            <span className="text-2xl font-bold text-[#062d3f]">
+              Techos <span className="text-[#ff751f]">Nass</span>
             </span>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6">
-            {" "}
-            {/* ← Cambié gap-8 a gap-6 */}
             <button
               onClick={() => scrollToSection("inicio")}
-              className="text-foreground hover:text-primary transition-colors px-2 py-1"
+              className="text-[#062d3f] hover:text-[#ff751f] transition-colors px-2 py-1 font-medium"
             >
               Inicio
             </button>
             <button
               onClick={() => scrollToSection("servicios")}
-              className="text-foreground hover:text-primary transition-colors px-2 py-1"
+              className="text-[#062d3f] hover:text-[#ff751f] transition-colors px-2 py-1 font-medium"
             >
               Servicios
             </button>
             <button
               onClick={() => scrollToSection("trabajos")}
-              className="text-foreground hover:text-primary transition-colors px-2 py-1"
+              className="text-[#062d3f] hover:text-[#ff751f] transition-colors px-2 py-1 font-medium"
             >
               Trabajos
             </button>
             <button
               onClick={() => scrollToSection("clientes")}
-              className="text-foreground hover:text-primary transition-colors px-2 py-1"
+              className="text-[#062d3f] hover:text-[#ff751f] transition-colors px-2 py-1 font-medium"
             >
               Clientes
             </button>
             <button
               onClick={() => scrollToSection("nosotros")}
-              className="text-foreground hover:text-primary transition-colors px-2 py-1"
+              className="text-[#062d3f] hover:text-[#ff751f] transition-colors px-2 py-1 font-medium"
             >
               Nosotros
             </button>
-            <Button onClick={() => scrollToSection("contacto")} size="lg">
+            <Button
+              onClick={() => scrollToSection("contacto")}
+              size="lg"
+              className="bg-[#ff751f] hover:bg-[#e5671a] text-white"
+            >
               <Phone className="mr-2 h-4 w-4" />
               Contactar
             </Button>
@@ -91,7 +78,7 @@ export function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden"
+            className="md:hidden text-[#062d3f]"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
@@ -104,46 +91,50 @@ export function Header() {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <nav className="md:hidden pb-4 flex flex-col gap-4">
-            <button
-              onClick={() => scrollToSection("inicio")}
-              className="text-left text-foreground hover:text-primary transition-colors py-2"
-            >
-              Inicio
-            </button>
-            <button
-              onClick={() => scrollToSection("servicios")}
-              className="text-left text-foreground hover:text-primary transition-colors py-2"
-            >
-              Servicios
-            </button>
-            <button
-              onClick={() => scrollToSection("trabajos")}
-              className="text-left text-foreground hover:text-primary transition-colors py-2"
-            >
-              Trabajos
-            </button>
-            <button
-              onClick={() => scrollToSection("clientes")}
-              className="text-left text-foreground hover:text-primary transition-colors py-2"
-            >
-              Clientes
-            </button>
-            <button
-              onClick={() => scrollToSection("nosotros")}
-              className="text-left text-foreground hover:text-primary transition-colors py-2"
-            >
-              Nosotros
-            </button>
-            <Button
-              onClick={() => scrollToSection("contacto")}
-              size="lg"
-              className="w-full"
-            >
-              <Phone className="mr-2 h-4 w-4" />
-              Contactar
-            </Button>
-          </nav>
+          <div className="md:hidden bg-white border-t border-gray-200 shadow-lg">
+            <nav className="flex flex-col py-4">
+              <button
+                onClick={() => scrollToSection("inicio")}
+                className="text-left text-[#062d3f] hover:text-[#ff751f] hover:bg-gray-50 transition-colors py-3 px-4 font-medium"
+              >
+                Inicio
+              </button>
+              <button
+                onClick={() => scrollToSection("servicios")}
+                className="text-left text-[#062d3f] hover:text-[#ff751f] hover:bg-gray-50 transition-colors py-3 px-4 font-medium"
+              >
+                Servicios
+              </button>
+              <button
+                onClick={() => scrollToSection("trabajos")}
+                className="text-left text-[#062d3f] hover:text-[#ff751f] hover:bg-gray-50 transition-colors py-3 px-4 font-medium"
+              >
+                Trabajos
+              </button>
+              <button
+                onClick={() => scrollToSection("clientes")}
+                className="text-left text-[#062d3f] hover:text-[#ff751f] hover:bg-gray-50 transition-colors py-3 px-4 font-medium"
+              >
+                Clientes
+              </button>
+              <button
+                onClick={() => scrollToSection("nosotros")}
+                className="text-left text-[#062d3f] hover:text-[#ff751f] hover:bg-gray-50 transition-colors py-3 px-4 font-medium"
+              >
+                Nosotros
+              </button>
+              <div className="px-4 py-3 mt-2">
+                <Button
+                  onClick={() => scrollToSection("contacto")}
+                  size="lg"
+                  className="w-full bg-[#ff751f] hover:bg-[#e5671a] text-white"
+                >
+                  <Phone className="mr-2 h-4 w-4" />
+                  Contactar
+                </Button>
+              </div>
+            </nav>
+          </div>
         )}
       </div>
     </header>

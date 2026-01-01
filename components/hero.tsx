@@ -111,7 +111,7 @@ export function Hero() {
                 className="w-16 h-16 md:w-24 md:h-24 object-contain"
               />
               <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
-                Techos Nass
+                Techos <span className="text-[#ff751f]">Nass</span>
               </h1>
             </div>
           </div>

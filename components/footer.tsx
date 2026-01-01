@@ -24,7 +24,9 @@ export function Footer() {
                   />
                 </div>
               </div>
-              <span className="text-2xl font-bold">Techos Nass</span>
+              <span className="text-2xl font-bold">
+                Techos <span className="text-[#ff751f]">Nass</span>
+              </span>
             </div>
             <p className="text-primary-foreground/80 leading-relaxed">
               40 años de experiencia en instalación, reparación y mantenimiento
