@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/logo.PNG",
+        url: "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767394946/LogoTechosNass_wutrlh.png",
         sizes: "32x32",
         type: "image/png",
       },

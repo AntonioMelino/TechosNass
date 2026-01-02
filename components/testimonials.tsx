@@ -261,7 +261,7 @@ export function Testimonials() {
                     </span>
                   </div>
                   <h3 className="text-lg font-bold text-foreground mb-1">
-                    ¿Quieres ver nuestras reseñas reales?
+                    ¿Quieres ver nuestras reseñas?
                   </h3>
                   <p className="text-muted-foreground text-sm">
                     Más de 50 clientes han dejado su opinión verificada en

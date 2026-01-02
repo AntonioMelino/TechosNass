@@ -1,10 +1,15 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Card, CardContent } from "@/components/ui/card"
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
-import { Badge } from "@/components/ui/badge"
-import { CheckCircle2 } from "lucide-react"
+import { useState } from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { Badge } from "@/components/ui/badge";
+import { CheckCircle2 } from "lucide-react";
 
 const works = [
   {
@@ -12,24 +17,40 @@ const works = [
     title: "Techo de chapa",
     description: "Instalación, mantenimiento y reparación",
     details: "Máxima eficacia para su techo, requiere poco mantenimiento.",
-    mainImage: "/new-metal-sheet-roofing-installation-on-house.jpg",
-    gallery: ["/professional-metal-sheet-roof-being-installed.jpg", "/completed-metal-sheet-roof-installation-close-up.jpg", "/metal-sheet-roofing-tools-and-materials.jpg"],
+    mainImage:
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767395283/TechoDeChapa_vbzvbe.jpg",
+    gallery: [
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767395345/TechoDeChapa2_obb8do.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767395404/TechoDeChapa3_juvxmc.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767395468/TechoDeChapa4_cmaw4d.jpg",
+    ],
   },
   {
     id: 2,
     title: "Techo de teja",
     description: "Instalación, mantenimiento y reparación",
-    details: "Es importante realizar su mantenimiento para evitar futuros problemas.",
-    mainImage: "/tile-roof-installation-on-residential-building.jpg",
-    gallery: ["/clay-tile-roof-being-installed-by-workers.jpg", "/beautiful-tile-roof-completed-installation.jpg", "/tile-roof-repair-and-maintenance-work.jpg"],
+    details:
+      "Es importante realizar su mantenimiento para evitar futuros problemas.",
+    mainImage:
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767395761/TechoDeTejas_bthjkg.jpg",
+    gallery: [
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767395760/TechoDeTejas2_x2mzne.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767395761/TechoDeTejas4_rnflqk.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767395761/TechoDeTejas3_zlurrx.jpg",
+    ],
   },
   {
     id: 3,
     title: "Canaletas y zinguería",
     description: "Instalación, mantenimiento y reparación",
     details: "Proteja los cimientos, paredes y techos de posibles deterioros.",
-    mainImage: "/gutter-installation-and-flashing-work-on-roof.jpg",
-    gallery: ["/aluminum-gutter-system-being-installed.jpg", "/roof-flashing-and-gutter-details-close-up.jpg", "/completed-gutter-system-on-residential-house.jpg"],
+    mainImage:
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767396248/CanaletasYZingueria_hu5qnc.jpg",
+    gallery: [
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767396247/CanaletasYZingueria2_cronfb.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767396248/CanaletasYZingueria3_x9tdhm.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767396249/CanaletasYZingueria4_rjyvpn.jpg",
+    ],
   },
   {
     id: 4,
@@ -37,49 +58,59 @@ const works = [
     description: "Detección y reparación especializada",
     details:
       "Somos especialistas, detectamos la posible gotera o filtración y actuamos con todas las medidas para que no vuelva a manifestarse.",
-    mainImage: "/roof-leak-repair-and-waterproofing-work.jpg",
+    mainImage:
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767396633/GoterasYFiltraciones_zhnr6b.jpg",
     gallery: [
-      "/worker-repairing-roof-leak-with-sealant.jpg",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767396632/GoterasYFiltraciones3_tphj2p.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767396632/GoterasYFiltraciones4_nlcupo.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767396631/GoterasYFiltraciones2_sh8epb.jpg",
     ],
   },
   {
     id: 5,
     title: "Estructuras en madera y metal",
     description: "Construcción artesanal y alta resistencia",
-    details: "Trabajos en madera realizados de forma artesanal. Estructuras metálicas de alta resistencia.",
-    mainImage: "/placeholder.svg?height=400&width=600",
+    details:
+      "Trabajos en madera realizados de forma artesanal. Estructuras metálicas de alta resistencia.",
+    mainImage:
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767394585/EstructuraDeMetalYMadera1_wv8lta.jpg",
     gallery: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767394586/EstructuraDeMetalYMadera2_sdzmzm.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767394585/EstructuraDeMetalYMadera3_embgps.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767394586/EstructuraDeMetalYMadera4_djetmm.jpg",
     ],
   },
   {
     id: 6,
-    title: "Visita y presupuesto sin cargo",
-    description: "Evaluación profesional gratuita",
-    details: "Realizamos visitas y presupuestos sin cargo dentro de la Zona Norte de Buenos Aires.",
-    mainImage: "/placeholder.svg?height=400&width=600",
+    title: "Visita y presupuesto",
+    description: "Evaluación profesional de excelencia",
+    details:
+      "Realizamos visitas y presupuestos dentro de Zona Norte, Buenos Aires.",
+    mainImage:
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767396891/VisitaYPresupuesto1_homuno.jpg",
     gallery: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767396889/VisitaYPresupuesto2_njk2p6.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767396889/VisitaYPresupuesto3_xqscuk.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767396890/VisitaYPresupuesto4_zo2hip.jpg",
     ],
   },
-]
+];
 
 export function Works() {
-  const [selectedWork, setSelectedWork] = useState<(typeof works)[0] | null>(null)
+  const [selectedWork, setSelectedWork] = useState<(typeof works)[0] | null>(
+    null
+  );
 
   return (
     <section id="trabajos" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">Trabajos Realizados</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">
+            Trabajos Realizados
+          </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Conozca los diferentes tipos de trabajos que realizamos con excelencia
+            Conozca los diferentes tipos de trabajos que realizamos con
+            excelencia
           </p>
         </div>
 
@@ -103,8 +134,12 @@ export function Works() {
                 </Badge>
               </div>
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-foreground mb-2">{work.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{work.description}</p>
+                <h3 className="text-xl font-bold text-foreground mb-2">
+                  {work.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  {work.description}
+                </p>
               </CardContent>
             </Card>
           ))}
@@ -115,13 +150,20 @@ export function Works() {
       <Dialog open={!!selectedWork} onOpenChange={() => setSelectedWork(null)}>
         <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
           <DialogHeader>
-            <DialogTitle className="text-2xl">{selectedWork?.title}</DialogTitle>
+            <DialogTitle className="text-2xl">
+              {selectedWork?.title}
+            </DialogTitle>
           </DialogHeader>
           <div className="space-y-6">
-            <p className="text-muted-foreground text-lg leading-relaxed">{selectedWork?.details}</p>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              {selectedWork?.details}
+            </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {selectedWork?.gallery.map((image, index) => (
-                <div key={index} className="relative h-64 rounded-lg overflow-hidden">
+                <div
+                  key={index}
+                  className="relative h-64 rounded-lg overflow-hidden"
+                >
                   <img
                     src={image || "/placeholder.svg"}
                     alt={`${selectedWork.title} - Imagen ${index + 1}`}
@@ -134,5 +176,5 @@ export function Works() {
         </DialogContent>
       </Dialog>
     </section>
-  )
+  );
 }

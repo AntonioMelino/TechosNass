@@ -89,7 +89,8 @@ export function Hero() {
       <div
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: "url('/background1080.jpg')",
+          backgroundImage:
+            "url('https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767394810/FondoSeccionHero_mrqoll.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -106,7 +107,7 @@ export function Hero() {
           <div className="flex flex-col items-center justify-center">
             <div className="flex items-center justify-center gap-4 mb-4">
               <img
-                src="/logo.PNG"
+                src="https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767394946/LogoTechosNass_wutrlh.png"
                 alt="Techos Nass Logo"
                 className="w-16 h-16 md:w-24 md:h-24 object-contain"
               />

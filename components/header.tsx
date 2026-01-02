@@ -23,7 +23,7 @@ export function Header() {
             {/* Logo */}
             <div className="w-10 h-10 relative flex items-center justify-center">
               <img
-                src="/logo.PNG"
+                src="https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767394946/LogoTechosNass_wutrlh.png"
                 alt="Techos Nass Logo"
                 className="w-full h-full object-contain"
               />
