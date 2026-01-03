@@ -18,25 +18,27 @@ const works = [
     description: "Instalación, mantenimiento y reparación",
     details: "Máxima eficacia para su techo, requiere poco mantenimiento.",
     mainImage:
-      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767395283/TechoDeChapa_vbzvbe.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767470853/PRINCIPAL_x1rglh.webp",
     gallery: [
-      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767395345/TechoDeChapa2_obb8do.jpg",
-      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767395404/TechoDeChapa3_juvxmc.jpg",
-      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767395468/TechoDeChapa4_cmaw4d.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767470853/130157154_207367704310864_8943590924892125445_n_fzly34.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767470853/601429657_18167007496376781_5883373661263126161_n_n5bmxp.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767470853/491444200_18142300009376781_3279200931069652266_n_r8bjdt.webp",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767470853/244661132_1793934427468140_1256092716192483257_n_nh1jmr.jpg",
     ],
   },
   {
     id: 2,
-    title: "Techo de teja",
+    title: "Techo de tejas y pizarra",
     description: "Instalación, mantenimiento y reparación",
     details:
       "Es importante realizar su mantenimiento para evitar futuros problemas.",
     mainImage:
-      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767395761/TechoDeTejas_bthjkg.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767470902/PRINCIPAL_fw3agc.jpg",
     gallery: [
-      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767395760/TechoDeTejas2_x2mzne.jpg",
-      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767395761/TechoDeTejas4_rnflqk.jpg",
-      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767395761/TechoDeTejas3_zlurrx.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767470903/67755672_166081791106792_6514054618214399300_n_uzqlfn.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767470902/69692772_466247050635926_5649263872690175019_n_ptytsm.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767470901/434472330_441297308300169_243228006508231626_n_xtpb62.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767470901/346046114_3420869248242318_2538028305788334266_n_r9uwi3.jpg",
     ],
   },
   {
@@ -45,11 +47,12 @@ const works = [
     description: "Instalación, mantenimiento y reparación",
     details: "Proteja los cimientos, paredes y techos de posibles deterioros.",
     mainImage:
-      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767396248/CanaletasYZingueria_hu5qnc.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767470948/principal_e2uw15.jpg",
     gallery: [
-      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767396247/CanaletasYZingueria2_cronfb.jpg",
-      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767396248/CanaletasYZingueria3_x9tdhm.jpg",
-      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767396249/CanaletasYZingueria4_rjyvpn.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767470949/202599503_598684274447615_3498616692206556599_n_kenpi3.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767470948/120522070_724429968414860_5396540908905729475_n_iwyo6a.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767470947/601369286_18167007538376781_8327145799038609018_n_bsfx00.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767470946/272685603_145125261232269_2210202406290129878_n_iaqbpe.jpg",
     ],
   },
   {
@@ -59,11 +62,12 @@ const works = [
     details:
       "Somos especialistas, detectamos la posible gotera o filtración y actuamos con todas las medidas para que no vuelva a manifestarse.",
     mainImage:
-      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767396633/GoterasYFiltraciones_zhnr6b.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767470978/PRINCIPAL_cc6zjo.jpg",
     gallery: [
-      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767396632/GoterasYFiltraciones3_tphj2p.jpg",
-      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767396632/GoterasYFiltraciones4_nlcupo.jpg",
-      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767396631/GoterasYFiltraciones2_sh8epb.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767470979/69081181_166676381157718_178534981185420412_n_tlep30.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767470981/128174361_156360669571645_1747133664970431259_n_yxha5t.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767470982/128541173_3510273055694620_3874346614722915912_n_co8d9k.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767470978/336052523_162474556283531_4518264352834111196_n_clkgvd.jpg",
     ],
   },
   {
@@ -73,25 +77,27 @@ const works = [
     details:
       "Trabajos en madera realizados de forma artesanal. Estructuras metálicas de alta resistencia.",
     mainImage:
-      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767394585/EstructuraDeMetalYMadera1_wv8lta.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767471033/PRINCIPAL_cuccfy.jpg",
     gallery: [
-      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767394586/EstructuraDeMetalYMadera2_sdzmzm.jpg",
-      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767394585/EstructuraDeMetalYMadera3_embgps.jpg",
-      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767394586/EstructuraDeMetalYMadera4_djetmm.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767471037/303333266_848148872804620_1964036748932184221_n_jtatfp.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767471036/243960849_557833358831462_2924896684050196304_n_iw6g7w.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767471035/53729362_832257757120035_370572984389096790_n_oeu5r0.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767471032/374395583_4318182648407093_3742448825739280033_n_llxfcg.jpg",
     ],
   },
   {
     id: 6,
-    title: "Visita y presupuesto",
-    description: "Evaluación profesional de excelencia",
+    title: "Impermeabilización",
+    description: "Instalación, mantenimiento y reparación.",
     details:
-      "Realizamos visitas y presupuestos dentro de Zona Norte, Buenos Aires.",
+      "Evite filtraciones que podrían provocar el deterioro de materiales y manchas.",
     mainImage:
-      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767396891/VisitaYPresupuesto1_homuno.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767471060/PRINCIPAL_yc7v0r.jpg",
     gallery: [
-      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767396889/VisitaYPresupuesto2_njk2p6.jpg",
-      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767396889/VisitaYPresupuesto3_xqscuk.jpg",
-      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767396890/VisitaYPresupuesto4_zo2hip.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767471063/560423771_18159376714376781_7253233970262231521_n_mmptbq.webp",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767471061/469022347_1500235707332179_4028890371805942383_n_p9kvgg.jpg",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767471059/561590423_18159376705376781_7747815156582161610_n_dividf.webp",
+      "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767471058/560449393_18159376723376781_6389579435751552814_n_gjypvu.webp",
     ],
   },
 ];
