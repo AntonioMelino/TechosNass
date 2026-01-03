@@ -102,6 +102,54 @@ export function Contact() {
                             11-3485-4971
                           </a>
                         </div>
+
+                        {/* Carlos - WhatsApp */}
+                        <div>
+                          <div className="flex items-center justify-between mb-1">
+                            <div className="flex items-center gap-2">
+                              <div className="w-2 h-2 bg-accent rounded-full"></div>
+                              <span className="font-medium text-foreground">
+                                Carlos
+                              </span>
+                            </div>
+                            <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">
+                              WhatsApp
+                            </span>
+                          </div>
+                          <a
+                            href="https://wa.me/5491162755870"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-muted-foreground hover:text-green-600 transition-colors flex items-center gap-2"
+                          >
+                            <MessageCircle className="h-4 w-4" />
+                            11-6275-5870
+                          </a>
+                        </div>
+
+                        {/* Stefan - WhatsApp */}
+                        <div>
+                          <div className="flex items-center justify-between mb-1">
+                            <div className="flex items-center gap-2">
+                              <div className="w-2 h-2 bg-accent rounded-full"></div>
+                              <span className="font-medium text-foreground">
+                                Stefan
+                              </span>
+                            </div>
+                            <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">
+                              WhatsApp
+                            </span>
+                          </div>
+                          <a
+                            href="https://wa.me/5491132034971"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-muted-foreground hover:text-green-600 transition-colors flex items-center gap-2"
+                          >
+                            <MessageCircle className="h-4 w-4" />
+                            11-3203-4971
+                          </a>
+                        </div>
                       </div>
 
                       <p className="text-sm text-muted-foreground mt-4 flex items-center gap-2">
@@ -230,7 +278,7 @@ export function Contact() {
                 <div>
                   <Textarea
                     name="mensaje"
-                    placeholder="Cuéntenos sobre su problema..."
+                    placeholder="Cuéntenos sobre su consulta..."
                     value={formData.mensaje}
                     onChange={handleChange}
                     rows={5}
@@ -247,15 +295,6 @@ export function Contact() {
               </form>
             </CardContent>
           </Card>
-        </div>
-
-        {/* Nota adicional */}
-        <div className="mt-12 max-w-2xl mx-auto text-center">
-          <p className="text-sm text-muted-foreground">
-            <span className="font-semibold text-foreground">Nota:</span> Puede
-            contactar directamente Alex según su disponibilidad. Él está
-            capacitado para atender sus consultas y coordinar visitas sin cargo.
-          </p>
         </div>
       </div>
     </section>

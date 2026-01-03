@@ -13,27 +13,27 @@ import {
 
 const testimonials = [
   {
-    name: "María González",
+    name: "Juan Manuel Riveros",
     rating: 5,
-    text: "Excelente trabajo! Repararon el techo de mi casa con mucho profesionalismo. Muy recomendables.",
+    text: "Son excelentes y realmente tienen mucha experiencia en el tema. Trabajaron con seriedad y responsabilidad desde que los contacte. Efectividad y eficiencia garantizadas.",
     location: "San Isidro",
   },
   {
-    name: "Carlos Martínez",
+    name: "Leo Leonardi",
     rating: 5,
-    text: "Instalaron canaletas nuevas en tiempo récord. El equipo es muy responsable y prolijo. 100% recomendados.",
+    text: "Tenía un problema de filtración en un techo de tejas coloniales que venía esquivando. Los encuentro por Google y al ver sus buenas reseñas decido probar. Mi experiencia fue excelente: Contestan rápido, hacen una visita para evaluar el problema, vienen y solucionan. Se acabó la filtración. Trabajan de manera eficaz y con prolijidad. Porsupuesto los volvería a llamar.",
     location: "Vicente López",
   },
   {
-    name: "Laura Fernández",
+    name: "Constanza Bossio",
     rating: 5,
-    text: "Solucionaron una filtración que otros no pudieron resolver. Trabajo impecable y con garantía.",
+    text: "Muy buen trabajo, súper prolijo! No los conocía, los llamé por los buenos comentarios que leí acá. Realizaron la reparación del alero de mi casa. Fue difícil conseguir quien lo haga porque es muy alto. Lo pintaron, quedó perfecto, ni se nota que tuviera una refacción! Vinieron con andamio. Cumplieron con todo lo pautado. Gracias!",
     location: "Olivos",
   },
   {
-    name: "Roberto Díaz",
+    name: "Hernán",
     rating: 5,
-    text: "Hicieron un techo de chapa completo en mi galpón. Excelente calidad y precio justo.",
+    text: "Excelente trabajo, como muchos de los comentarios, también los llamé por los mismos. Muy recomendables, trabajo prolijo y me solucionaron el problema de unas filtraciones importantes, los tengo agendado, de ahora en adelante mis techistas de confianza. Volveré pronto a utilizar sus servicios. Gracias Carlos y a sus hijos.",
     location: "Martínez",
   },
 ];
@@ -197,7 +197,7 @@ export function Testimonials() {
                   Años de Experiencia
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Empresa familiar desde 1984
+                  Dos generaciones en el rubro
                 </p>
               </div>
 
