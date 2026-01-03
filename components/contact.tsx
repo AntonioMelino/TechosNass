@@ -61,7 +61,7 @@ export function Contact() {
         </div>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Información de contacto */}
+          {/* Columna izquierda - Solo Información de contacto */}
           <div className="space-y-6">
             <Card>
               <CardHeader>
@@ -225,7 +225,67 @@ export function Contact() {
                 </div>
               </CardContent>
             </Card>
+          </div>
 
+          {/* Columna derecha - Formulario + Visita técnica */}
+          <div className="space-y-6">
+            <Card>
+              <CardHeader>
+                <CardTitle>Enviar Consulta por WhatsApp</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <div>
+                    <Input
+                      name="nombre"
+                      placeholder="Su nombre"
+                      value={formData.nombre}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+                  <div>
+                    <Input
+                      name="telefono"
+                      type="tel"
+                      placeholder="Su teléfono (ej: 11-1234-5678)"
+                      value={formData.telefono}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+                  <div>
+                    <Input
+                      name="email"
+                      type="email"
+                      placeholder="Su email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+                  <div>
+                    <Textarea
+                      name="mensaje"
+                      placeholder="Cuéntenos sobre su consulta..."
+                      value={formData.mensaje}
+                      onChange={handleChange}
+                      rows={5}
+                      required
+                    />
+                  </div>
+                  <Button type="submit" size="lg" className="w-full">
+                    <Send className="mr-2 h-4 w-4" />
+                    Enviar por WhatsApp
+                  </Button>
+                  <p className="text-xs text-muted-foreground text-center">
+                    Al enviar, se abrirá WhatsApp con su mensaje prellenado
+                  </p>
+                </form>
+              </CardContent>
+            </Card>
+
+            {/* Card de Visita técnica especializada */}
             <Card className="bg-accent text-accent-foreground">
               <CardContent className="p-6">
                 <h3 className="text-lg font-bold mb-2">
@@ -238,63 +298,6 @@ export function Contact() {
               </CardContent>
             </Card>
           </div>
-
-          {/* Formulario */}
-          <Card>
-            <CardHeader>
-              <CardTitle>Enviar Consulta por WhatsApp</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <Input
-                    name="nombre"
-                    placeholder="Su nombre"
-                    value={formData.nombre}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-                <div>
-                  <Input
-                    name="telefono"
-                    type="tel"
-                    placeholder="Su teléfono (ej: 11-1234-5678)"
-                    value={formData.telefono}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-                <div>
-                  <Input
-                    name="email"
-                    type="email"
-                    placeholder="Su email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-                <div>
-                  <Textarea
-                    name="mensaje"
-                    placeholder="Cuéntenos sobre su consulta..."
-                    value={formData.mensaje}
-                    onChange={handleChange}
-                    rows={5}
-                    required
-                  />
-                </div>
-                <Button type="submit" size="lg" className="w-full">
-                  <Send className="mr-2 h-4 w-4" />
-                  Enviar por WhatsApp
-                </Button>
-                <p className="text-xs text-muted-foreground text-center">
-                  Al enviar, se abrirá WhatsApp con su mensaje prellenado
-                </p>
-              </form>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </section>
