@@ -19,9 +19,9 @@ const testimonials = [
     location: "San Isidro",
   },
   {
-    name: "Leo Leonardi",
+    name: "Patricio Nan",
     rating: 5,
-    text: "Tenía un problema de filtración en un techo de tejas coloniales que venía esquivando. Los encuentro por Google y al ver sus buenas reseñas decido probar. Mi experiencia fue excelente: Contestan rápido, hacen una visita para evaluar el problema, vienen y solucionan. Se acabó la filtración. Trabajan de manera eficaz y con prolijidad. Porsupuesto los volvería a llamar.",
+    text: "Muy recomendables! Los encontré acá por las buenas reseñas y eran ciertas. Prolijos, rápidos y buena predisposición! Me consultaron después de la primera lluvia si había entrado agua. El trabajo quedo perfecto.",
     location: "Vicente López",
   },
   {
