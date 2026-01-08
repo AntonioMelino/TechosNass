@@ -15,7 +15,8 @@ const works = [
   {
     id: 1,
     title: "Techo de chapa",
-    description: "Instalación, mantenimiento y reparación",
+    description:
+      "Soluciones prácticas y duraderas para cubiertas de chapa, con colocación precisa y ajustes profesionales.",
     details: "Máxima eficacia para su techo, requiere poco mantenimiento.",
     mainImage:
       "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767470853/PRINCIPAL_x1rglh.webp",
@@ -29,7 +30,8 @@ const works = [
   {
     id: 2,
     title: "Techo de tejas y pizarra",
-    description: "Instalación, mantenimiento y reparación",
+    description:
+      "Trabajos especializados en techos tradicionales, cuidando la estética y la correcta colocación de cada pieza.",
     details:
       "Es importante realizar su mantenimiento para evitar futuros problemas.",
     mainImage:
@@ -44,7 +46,8 @@ const works = [
   {
     id: 3,
     title: "Canaletas y zinguería",
-    description: "Instalación, mantenimiento y reparación",
+    description:
+      "Diseño y colocación de sistemas de desagüe eficientes que garantizan una correcta evacuación del agua.",
     details: "Proteja los cimientos, paredes y techos de posibles deterioros.",
     mainImage:
       "https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767470948/principal_e2uw15.jpg",
@@ -58,7 +61,8 @@ const works = [
   {
     id: 4,
     title: "Goteras y filtraciones",
-    description: "Detección y reparación especializada",
+    description:
+      "Diagnóstico preciso de filtraciones y reparación definitiva para evitar daños estructurales.",
     details:
       "Somos especialistas, detectamos la posible gotera o filtración y actuamos con todas las medidas para que no vuelva a manifestarse.",
     mainImage:
@@ -73,7 +77,8 @@ const works = [
   {
     id: 5,
     title: "Estructuras en madera y metal",
-    description: "Construcción artesanal y alta resistencia",
+    description:
+      "Construcción de estructuras resistentes y funcionales, combinando técnicas artesanales y materiales de calidad.",
     details:
       "Trabajos en madera realizados de forma artesanal. Estructuras metálicas de alta resistencia.",
     mainImage:
@@ -88,7 +93,8 @@ const works = [
   {
     id: 6,
     title: "Impermeabilización",
-    description: "Instalación, mantenimiento y reparación.",
+    description:
+      "Aplicación de sistemas impermeables que protegen el techo y prolongan su vida útil.",
     details:
       "Evite filtraciones que podrían provocar el deterioro de materiales y manchas.",
     mainImage:
