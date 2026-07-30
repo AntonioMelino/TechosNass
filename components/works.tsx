@@ -114,26 +114,26 @@ export function Works() {
   );
 
   return (
-    <section id="trabajos" className="py-24 bg-background">
+    <section id="trabajos" className="py-16 sm:py-20 md:py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">
+        <div className="text-center mb-10 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">
             Trabajos Realizados
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
+          <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
             Conozca los diferentes tipos de trabajos que realizamos con
             excelencia
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {works.map((work) => (
             <Card
               key={work.id}
               className="overflow-hidden cursor-pointer hover:shadow-xl transition-all duration-300 group"
               onClick={() => setSelectedWork(work)}
             >
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
                 <img
                   src={work.mainImage || "/placeholder.svg"}
                   alt={work.title}
@@ -145,11 +145,11 @@ export function Works() {
                   Disponible
                 </Badge>
               </div>
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-foreground mb-2">
+              <CardContent className="p-4 sm:p-6">
+                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-2">
                   {work.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                   {work.description}
                 </p>
               </CardContent>
@@ -167,14 +167,14 @@ export function Works() {
             </DialogTitle>
           </DialogHeader>
           <div className="space-y-6">
-            <p className="text-muted-foreground text-lg leading-relaxed">
+            <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
               {selectedWork?.details}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {selectedWork?.gallery.map((image, index) => (
                 <div
                   key={index}
-                  className="relative h-64 rounded-lg overflow-hidden"
+                  className="relative h-48 sm:h-64 rounded-lg overflow-hidden"
                 >
                   <img
                     src={image || "/placeholder.svg"}

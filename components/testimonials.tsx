@@ -50,25 +50,25 @@ export function Testimonials() {
   };
 
   return (
-    <section id="clientes" className="py-24 bg-background">
+    <section id="clientes" className="py-16 sm:py-20 md:py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">
+        <div className="text-center mb-10 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">
             Testimonios que avalan nuestro trabajo
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
+          <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
             Experiencias reales de clientes satisfechos
           </p>
         </div>
 
         {/* Mapa simplificado */}
-        <div className="max-w-4xl mx-auto mb-16">
+        <div className="max-w-4xl mx-auto mb-10 sm:mb-16">
           <div className="text-center mb-6">
-            <h3 className="text-2xl font-bold text-foreground mb-2 flex items-center justify-center gap-2">
+            <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-2 flex items-center justify-center gap-2">
               <MapPin className="h-5 w-5 text-primary" />
               Trabajamos en toda Zona Norte
             </h3>
-            <p className="text-muted-foreground">
+            <p className="text-sm sm:text-base text-muted-foreground">
               Nuestra área de cobertura incluye San Isidro, Vicente López,
               Olivos, Martínez y más
             </p>
@@ -79,13 +79,12 @@ export function Testimonials() {
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.5154865272502!2d-58.5684619347828!3d-34.515165673749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbbf8e603c67d%3A0xfc59b713581b7248!2sTechista%20Zona%20Norte%20-%20Techos%20Nass!5e0!3m2!1ses-419!2sar!4v1767135113440!5m2!1ses-419!2sar"
                 width="100%"
-                height="400"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Área de cobertura Techos Nass - Zona Norte"
-                className="w-full"
+                className="w-full h-64 sm:h-80 md:h-[400px]"
               />
               <div className="p-4 bg-gradient-to-r from-primary/5 to-transparent">
                 <p className="text-sm text-center text-muted-foreground">
@@ -101,7 +100,7 @@ export function Testimonials() {
 
         {/* Testimonios Grid con efecto hover */}
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 relative">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-8 sm:mb-12 relative">
             {testimonials.map((testimonial, index) => (
               <div key={index} className="relative">
                 {/* Tooltip que aparece al hacer hover */}
@@ -187,10 +186,10 @@ export function Testimonials() {
           </div>
 
           {/* Estadísticas */}
-          <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl p-8 text-center border border-border/50 mb-12">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl p-5 sm:p-8 text-center border border-border/50 mb-8 sm:mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
               <div className="space-y-2">
-                <div className="text-4xl md:text-5xl font-bold text-primary">
+                <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary">
                   40+
                 </div>
                 <div className="text-foreground font-semibold">
@@ -202,7 +201,7 @@ export function Testimonials() {
               </div>
 
               <div className="space-y-2">
-                <div className="text-4xl md:text-5xl font-bold text-primary">
+                <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary">
                   1000+
                 </div>
                 <div className="text-foreground font-semibold">
@@ -214,7 +213,7 @@ export function Testimonials() {
               </div>
 
               <div className="space-y-2">
-                <div className="text-4xl md:text-5xl font-bold text-primary">
+                <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary">
                   5.0
                 </div>
                 <div className="text-foreground font-semibold">
@@ -227,10 +226,10 @@ export function Testimonials() {
             </div>
 
             <div className="pt-6 border-t border-border/30">
-              <p className="text-lg text-foreground font-semibold mb-2">
+              <p className="text-base sm:text-lg text-foreground font-semibold mb-2">
                 ¿Listo para ser nuestro próximo cliente satisfecho?
               </p>
-              <p className="text-muted-foreground mb-6">
+              <p className="text-sm sm:text-base text-muted-foreground mb-6">
                 Desplázate hacia abajo para contactarnos y solicitar tu
                 presupuesto
               </p>
@@ -244,7 +243,7 @@ export function Testimonials() {
 
           {/* Banner de Google Reviews */}
           <Card className="border-blue-200 bg-gradient-to-r from-blue-50/50 to-white overflow-hidden">
-            <CardContent className="p-6 md:p-8">
+            <CardContent className="p-5 sm:p-6 md:p-8">
               <div className="flex flex-col md:flex-row items-center justify-between gap-6">
                 <div className="text-left">
                   <div className="flex items-center gap-2 mb-2">
