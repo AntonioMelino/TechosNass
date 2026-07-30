@@ -8,15 +8,15 @@ import {
 
 export function Footer() {
   return (
-    <footer className="bg-primary text-primary-foreground py-12">
+    <footer className="bg-primary text-primary-foreground py-10 sm:py-12">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-8">
           {/* Logo y descripción */}
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="flex items-center gap-2">
                 {/* Logo */}
-                <div className="w-10 h-10 relative flex items-center justify-center">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 relative flex items-center justify-center">
                   <img
                     src="https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767394946/LogoTechosNass_wutrlh.png"
                     alt="Techos Nass Logo"
@@ -24,7 +24,7 @@ export function Footer() {
                   />
                 </div>
               </div>
-              <span className="text-2xl font-bold">
+              <span className="text-xl sm:text-2xl font-bold">
                 Techos <span className="text-[#ff751f]">Nass</span>
               </span>
             </div>

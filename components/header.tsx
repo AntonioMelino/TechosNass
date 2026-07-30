@@ -18,10 +18,10 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           <div className="flex items-center gap-2">
             {/* Logo */}
-            <div className="w-10 h-10 relative flex items-center justify-center">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 relative flex items-center justify-center">
               <img
                 src="https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767394946/LogoTechosNass_wutrlh.png"
                 alt="Techos Nass Logo"
@@ -29,7 +29,7 @@ export function Header() {
               />
             </div>
 
-            <span className="text-2xl font-bold text-[#062d3f]">
+            <span className="text-lg sm:text-2xl font-bold text-[#062d3f]">
               Techos <span className="text-[#ff751f]">Nass</span>
             </span>
           </div>
