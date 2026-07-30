@@ -49,18 +49,18 @@ export function Contact() {
   };
 
   return (
-    <section id="contacto" className="py-24 bg-muted/30">
+    <section id="contacto" className="py-16 sm:py-20 md:py-24 bg-muted/30">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">
+        <div className="text-center mb-10 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">
             Contáctenos
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
+          <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
             Estamos listos para ayudarle con su problema.
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
           {/* Columna izquierda - Solo Información de contacto */}
           <div className="space-y-6">
             <Card>
