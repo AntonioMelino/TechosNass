@@ -84,7 +84,7 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center pt-16 sm:pt-20"
+      className="relative min-h-screen flex items-center pt-20"
     >
       <div
         className="absolute inset-0 z-0"
@@ -98,38 +98,38 @@ export function Hero() {
       />
       <div className="absolute inset-0 z-0 bg-primary/60" />
 
-      <div className="container mx-auto px-4 py-16 sm:py-20 relative z-10">
-        <div className="max-w-4xl mx-auto text-center space-y-6 sm:space-y-8">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs sm:text-sm font-semibold border border-white/30">
+      <div className="container mx-auto px-4 py-20 relative z-10">
+        <div className="max-w-4xl mx-auto text-center space-y-8">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-white text-sm font-semibold border border-white/30">
             40 años de experiencia en Zona Norte
           </div>
 
           <div className="flex flex-col items-center justify-center">
-            <div className="flex items-center justify-center gap-2 sm:gap-4 mb-4">
+            <div className="flex items-center justify-center gap-4 mb-4">
               <img
                 src="https://res.cloudinary.com/dhwsxp2c8/image/upload/v1767394946/LogoTechosNass_wutrlh.png"
                 alt="Techos Nass Logo"
-                className="w-10 h-10 sm:w-16 sm:h-16 md:w-24 md:h-24 object-contain"
+                className="w-16 h-16 md:w-24 md:h-24 object-contain"
               />
-              <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-white leading-tight">
+              <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
                 Techos <span className="text-[#ff751f]">Nass</span>
               </h1>
             </div>
           </div>
 
-          <p className="text-base sm:text-xl md:text-2xl text-white font-medium">
+          <p className="text-xl md:text-2xl text-white font-medium">
             Especialistas en instalación, reparación y mantenimiento de techos
           </p>
 
-          <p className="text-sm sm:text-lg text-white/90 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-white/90 max-w-2xl mx-auto leading-relaxed">
             Empresa familiar con 40 años de trayectoria. Ofrecemos un equipo
             sumamente profesional y garantía en todos nuestros trabajos.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center pt-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <Button
               size="lg"
-              className="w-full sm:w-auto text-base sm:text-lg h-12 sm:h-14 px-6 sm:px-8 shadow-lg bg-accent hover:bg-accent/90 text-white"
+              className="text-lg h-14 px-8 shadow-lg bg-accent hover:bg-accent/90 text-white"
               onClick={scrollToContact}
             >
               <Phone className="mr-2 h-5 w-5" />
@@ -138,7 +138,7 @@ export function Hero() {
             <Button
               size="lg"
               variant="outline"
-              className="w-full sm:w-auto text-base sm:text-lg h-12 sm:h-14 px-6 sm:px-8 border-2 border-white text-white hover:bg-white hover:text-primary bg-transparent"
+              className="text-lg h-14 px-8 border-2 border-white text-white hover:bg-white hover:text-primary bg-transparent"
               onClick={scrollToWorks}
             >
               Ver Trabajos
@@ -149,31 +149,25 @@ export function Hero() {
           {/* Stats con efecto de conteo */}
           <div
             ref={statsRef}
-            className="grid grid-cols-3 gap-2 sm:gap-6 md:gap-8 pt-8 sm:pt-12 max-w-2xl mx-auto"
+            className="grid grid-cols-3 gap-8 pt-12 max-w-2xl mx-auto"
           >
-            <div className="space-y-1 sm:space-y-2">
-              <div className="text-xl sm:text-3xl md:text-5xl font-bold text-white">
+            <div className="space-y-2">
+              <div className="text-4xl md:text-5xl font-bold text-white">
                 {experience}+
               </div>
-              <div className="text-[11px] sm:text-sm text-white/80 leading-tight">
-                Años de experiencia
-              </div>
+              <div className="text-sm text-white/80">Años de experiencia</div>
             </div>
-            <div className="space-y-1 sm:space-y-2">
-              <div className="text-xl sm:text-3xl md:text-5xl font-bold text-white">
+            <div className="space-y-2">
+              <div className="text-4xl md:text-5xl font-bold text-white">
                 {projects}+
               </div>
-              <div className="text-[11px] sm:text-sm text-white/80 leading-tight">
-                Trabajos realizados
-              </div>
+              <div className="text-sm text-white/80">Trabajos realizados</div>
             </div>
-            <div className="space-y-1 sm:space-y-2">
-              <div className="text-xl sm:text-3xl md:text-5xl font-bold text-white">
+            <div className="space-y-2">
+              <div className="text-4xl md:text-5xl font-bold text-white">
                 {guarantee}%
               </div>
-              <div className="text-[11px] sm:text-sm text-white/80 leading-tight">
-                Con garantía
-              </div>
+              <div className="text-sm text-white/80">Con garantía</div>
             </div>
           </div>
         </div>
