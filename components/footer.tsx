@@ -101,7 +101,15 @@ export function Footer() {
         <div className="border-t border-primary-foreground/20 pt-8 text-center text-primary-foreground/60">
           <p>
             &copy; {new Date().getFullYear()} Techos Nass. Todos los derechos
-            reservados. Hecho por Antonio Melino.
+            reservados. Hecho por{" "}
+            <a
+              href="https://am-estudio-professional.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-white transition-colors"
+            >
+              AM Estudio.
+            </a>
           </p>
         </div>
       </div>
