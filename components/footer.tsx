@@ -103,7 +103,7 @@ export function Footer() {
             &copy; {new Date().getFullYear()} Techos Nass. Todos los derechos
             reservados.{" "}
             <a
-              href="https://am-estudio-professional.vercel.app/"
+              href="https://www.antoniomelino.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition-colors"
